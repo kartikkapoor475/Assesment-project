@@ -1,0 +1,30 @@
+body{
+    background-color: cornsilk;
+}
+.card-img-top{
+    height: 350px;
+}
+
+
+
+.search::placeholder {  
+    color: white !important;  
+}
+
+.source-news{
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.source-btns, .source-container{
+    height: 500px;
+    overflow: auto;
+}
+
+.active{
+    color: grey!important;
+}
+
+.search-btn{
+    cursor: pointer;
+}

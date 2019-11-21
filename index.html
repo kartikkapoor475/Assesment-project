@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My News App</title>
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" href="k1.css">
+	<style type="text/css">
+	
+	</style>
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar bg-success">
+        <a class="navbar-brand" href="#">MyNewsWebApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#top">Top <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#sources">Sources</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country 
+                    </a>
+                    <div class="dropdown-menu dropdown-primary countries-drop" aria-labelledby="navbarDropdownMenuLink">
+                        <span class="dropdown-item waves-effect waves-light active">US: United States</span>
+						<span class="dropdown-item waves-effect waves-light">IN: India</span>
+						
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#about">About</a>
+                </li>
+            </ul>
+            <div class="input-group md-form form-sm form-2 pl-0 w-50 m-0 p-0">
+			  <input class="form-control my-0 py-1 red-border search text-white" type="text" placeholder="Search" aria-label="Search">
+			  <div class="input-group-append">
+			    <span class="input-group-text transparent lighten-3 search-btn" id="basic-text1"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
+			  </div>
+			</div>
+        </div>
+    </nav>
+
+    <div id = "top" class="row py-4 mt-5 mx-0">
+		<div class="owl-carousel owl-theme col-md-12 px-0"></div>
+	</div>
+
+	<div id = "sources" class="row mx-0 mt-5 pt-5">
+		<h1 class="h1-responsive d-block col-md-12 font-weight-bold text-center">Sources</h1>
+		<div class="col-md-2 source-btns"></div>
+		<div class="col-md-10 source-container">
+		</div>
+	</div>
+
+	<!--
+		m-sets margin 		
+		p-sets padding    
+		b - sets margin-bottom or padding-bottom
+
+l - sets margin-left or padding-left
+
+r - sets margin-right or padding-right
+
+x - sets both padding-left and padding-right or margin-left and margin-right
+
+y - sets both padding-top and padding-bottom or margin-top and margin-bottom
+
+blank - sets a margin or padding on all 4 sides of the element
+0 - sets margin or padding to 0
+
+1 - sets margin or padding to .25rem (4px if font-size is 16px)
+
+2 - sets margin or padding to .5rem (8px if font-size is 16px)
+
+3 - sets margin or padding to 1rem (16px if font-size is 16px)
+
+4 - sets margin or padding to 1.5rem (24px if font-size is 16px)
+
+5 - sets margin or padding to 3rem (48px if font-size is 16px)
+
+auto - sets margin to auto 
+	-->
+	<div id = "search-results" class="row py-4 mt-5 mx-0 d-none">			<!--The output will come in form of headlines-->
+    	<h1 class="h1-responsive d-block col-md-12 font-weight-bold text-center mt-5">Results</h1>
+    	<div class="col-md-12 result-container px-3 mx-auto row">
+			
+    	</div>
+    </div>
+	<div id = "about" class="row mx-0 mt-5 pt-5">		<!--Will take to the about part-->
+		<h1 class="h1-responsive d-block col-md-12 font-weight-bold text-center mt-5">About</h1>
+		<div class="col-md-6 text-center mx-auto">
+			<p class="text-center font-weight-bold h5-responsoive">All requests handled by <a href="https://newsapi.org/" target="_blank">News API</a></p>
+			<i class="fa fa-phone">9780572884
+				
+			</i>
+		</div>	
+	</div>
+
+    <!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- OwlCarousel -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.16/js/mdb.min.js"></script>
+
+
+	
+
+
+
+      
+</script>
+<script src="k1.js">
+</script>
+</body>
+</html>
